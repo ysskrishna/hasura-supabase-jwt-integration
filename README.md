@@ -116,6 +116,11 @@ Update your `docker-compose.yml` with `HASURA_GRAPHQL_JWT_SECRET` environment va
 }
 ```
 
-![jwt.io - Decode Supabase Access Token with Hasura Claims](media/jwt_io_decode_supabase_access_token_with_hasura_claims.png)
+![jwt.io - Decode Supabase Access Token with Hasura Claims](media/supabase_access_token_with_hasura_claims.png)
+
+## 6. Setup Hasura RBAC Permissions
+
+Congrats now the Supabase access tokens contain the `user` and `anonymous` roles. You can now setup Hasura RBAC permissions to restrict the access to the resources based on the roles.
 
 
+![Hasura - Update Roles and Permissions](media/hasura_update_roles_and_permissions.png)
