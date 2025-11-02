@@ -97,3 +97,25 @@ Update your `docker-compose.yml` with `HASURA_GRAPHQL_JWT_SECRET` environment va
       # other settings...
       HASURA_GRAPHQL_JWT_SECRET: '{"type":"HS256","key":"<YOUR_SUPABASE_JWT_SECRET>","claims_namespace":"https://hasura.io/jwt/claims"}'
 ```
+
+## 5. Verify Hasura Claims in Supabase Access Tokens
+
+1. In your supabase integrated project, now the session access token will contain the Hasura claims. You can copy the `access_token` from session object and paste it in [jwt.io](https://jwt.io/) to decode the token and see the Hasura claims.
+
+```json
+{
+  ...,
+  "https://hasura.io/jwt/claims": {
+    "x-hasura-allowed-roles": [
+      "user",
+      "anonymous"
+    ],
+    "x-hasura-default-role": "user",
+    "x-hasura-user-id": "<user_uuid>"
+  },
+}
+```
+
+![jwt.io - Decode Supabase Access Token with Hasura Claims](media/jwt_io_decode_supabase_access_token_with_hasura_claims.png)
+
+
