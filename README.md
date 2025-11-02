@@ -4,8 +4,9 @@ In this blog post, we will integrate Hasura RBAC with Supabase JWT Authenticatio
 
 ## Prerequisites
 
-- Hasura Cloud
-- Supabase Cloud
+- Supabase Project
+- Hasura (Cloud or self-hosted)
+
 
 
 ### 1. **Add Custom Claims via Database Function**
@@ -68,3 +69,31 @@ REVOKE EXECUTE ON FUNCTION public.custom_access_token_hook FROM authenticated, a
 3. Save and Verify that the hook is enabled
 
 ![Auth Hooks - Verify Customize Access Token (JWT) Claims hook](media/setup_custom_jwt_hook_step3.png)
+
+
+### 3. **Get Supabase JWT Secret**
+
+1. Copy the **Legacy JWT Secret** from **Project Settings** → **JWT Keys**
+
+![Project Settings - JWT Keys](media/project_settings_jwt_secret.png)
+
+### 4.1 **Configure Hasura Cloud**
+
+1. Go to Hasura Cloud Dashboard open on **Env Vars**
+
+![Hasura Cloud - Environment Variables](media/setup_hasura_cloud_env_vars.png)
+
+2. Add `HASURA_GRAPHQL_JWT_SECRET` environment variable with the value of `{"type":"HS256","key":"<YOUR_SUPABASE_JWT_SECRET>","claims_namespace":"https://hasura.io/jwt/claims"}`. Don't forget to replace `<YOUR_SUPABASE_JWT_SECRET>` with your actual Supabase JWT Secret.
+
+![Hasura Cloud - Environment Variables](media/setup_hasura_graphql_jwt_secret_env_var.png)
+
+### 4.2 **Configure Hasura (Self-Hosted)**
+
+Update your `docker-compose.yml` with `HASURA_GRAPHQL_JWT_SECRET` environment variable and restart the container:
+
+```yaml:docker-compose.yml
+  hasura:
+    environment:
+      # other settings...
+      HASURA_GRAPHQL_JWT_SECRET: '{"type":"HS256","key":"<YOUR_SUPABASE_JWT_SECRET>","claims_namespace":"https://hasura.io/jwt/claims"}'
+```
