@@ -198,7 +198,12 @@ Congratulations on successfully integrating Hasura RBAC with Supabase JWT Authen
 
 Thank you for following along! If you found this guide helpful, consider sharing it with others embarking on a similar journey. Happy coding!
 
----
+## Author
+
+**Y. Siva Sai Krishna** ([@ysskrishna](https://github.com/ysskrishna))
+
+This repo is a part of my personal blog [Integrating Hasura RBAC with Supabase JWT Authentication](https://ysskrishna.vercel.app/blogs/integrating-hasura-rbac-with-supabase-jwt-authentication). 
+
 
 ## License
 
