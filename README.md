@@ -190,3 +190,9 @@ Congratulations on successfully integrating Hasura RBAC with Supabase JWT Authen
 - Share your experience or ask questions in the [Hasura Community](https://hasura.io/community/) or [Supabase Discord](https://discord.gg/supabase).
 
 Thank you for following along! If you found this guide helpful, consider sharing it with others embarking on a similar journey. Happy coding!
+
+---
+
+## License
+
+This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
