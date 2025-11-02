@@ -1,5 +1,12 @@
 # Integrating Hasura RBAC with Supabase JWT Authentication
 
+[![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+![Hasura](https://img.shields.io/badge/Hasura-2.0+-2E7DF6?logo=hasura&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?logo=JSON%20web%20tokens&logoColor=white)
+
 Welcome to this comprehensive guide on integrating Hasura Role-Based Access Control (RBAC) with Supabase JWT Authentication! If you're looking to build a secure, scalable application with fine-grained access control, this tutorial is for you. By the end, you'll have a seamless setup where Supabase handles user authentication and Hasura enforces role-based permissions, all connected through JSON Web Tokens (JWTs). Let's dive in!
 
 ## Table of Contents
