@@ -6,7 +6,8 @@
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?logo=JSON%20web%20tokens&logoColor=white)
-[![Blog](https://img.shields.io/badge/Blog-ysskrishna.vercel.app-blue)](https://ysskrishna.vercel.app/blogs/integrating-hasura-rbac-with-supabase-jwt-authentication)
+[![Blog](https://img.shields.io/badge/Blog-ysskrishna.space-blue)](https://www.ysskrishna.space/blog/integrating-hasura-rbac-with-supabase-jwt-authentication)
+[![Author site](https://img.shields.io/badge/author-ysskrishna.space-informational)](https://ysskrishna.space)
 
 ![OG Image](media/og.png)
 
@@ -189,7 +190,7 @@ If you encounter problems, here are some common issues and solutions:
 - **Hasura Rejects Tokens**: Verify that the `HASURA_GRAPHQL_JWT_SECRET` is correctly set with the right Supabase secret and that the `claims_namespace` matches `https://hasura.io/jwt/claims`.
 - **Permission Errors**: Double-check role names in Hasura match those in the JWT (`user`, `anonymous`). Also, ensure permission rules are saved and applied to the correct tables.
 
-If issues persist, consult the [Hasura Documentation](https://hasura.io/docs/latest/auth/jwt/) or [Supabase Support](https://supabase.com/support).
+If issues persist, consult the [Hasura Documentation](https://hasura.io/docs/2.0/auth/authentication/jwt/) or [Supabase Support](https://supabase.com/support).
 
 These examples illustrate how flexible and powerful this setup can be for modern applications.
 
@@ -201,13 +202,33 @@ Congratulations on successfully integrating Hasura RBAC with Supabase JWT Authen
 
 Thank you for following along! If you found this guide helpful, consider sharing it with others embarking on a similar journey. Happy coding!
 
-## Author
+## Built and maintained by
 
-**Y. Siva Sai Krishna** ([@ysskrishna](https://github.com/ysskrishna))
+Integrating Hasura RBAC with Supabase JWT Authentication is built and maintained by:
 
-This repo is a part of my personal blog [Integrating Hasura RBAC with Supabase JWT Authentication](https://ysskrishna.vercel.app/blogs/integrating-hasura-rbac-with-supabase-jwt-authentication). 
+| | Name | GitHub | Role |
+|---|------|--------|------|
+| <img src="https://github.com/ysskrishna.png?size=120" width="60" height="60" alt="Y. Siva Sai Krishna"> | **Y. Siva Sai Krishna** | [@ysskrishna](https://github.com/ysskrishna) | Creator |
 
+## Support
+
+If you find this project helpful:
+
+- ⭐ Star the repository
+- 🐛 [Report issues](https://github.com/ysskrishna/hasura-supabase-jwt-integration/issues)
+- 🔀 Submit pull requests
+- 💝 [Sponsor on GitHub](https://github.com/sponsors/ysskrishna)
 
 ## License
 
-This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+CC BY-NC-SA 4.0 © [Y. Siva Sai Krishna](https://github.com/ysskrishna) — see [LICENSE](LICENSE) for details.
+
+---
+
+<p align="left">
+  <a href="https://github.com/ysskrishna">Author's GitHub</a> •
+  <a href="https://linkedin.com/in/ysskrishna">Author's LinkedIn</a> •
+  <a href="https://ysskrishna.space">Author's site</a> •
+  <a href="https://www.ysskrishna.space/blog/integrating-hasura-rbac-with-supabase-jwt-authentication">Integrating Hasura RBAC with Supabase JWT Authentication</a> •
+  <a href="https://github.com/ysskrishna/hasura-supabase-jwt-integration/issues">Report Issues</a>
+</p>
